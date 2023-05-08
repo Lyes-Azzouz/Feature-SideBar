@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.sidebar-container {
+  width: 220px;
+  height: calc(100vh - 5vh);
+  background-color: #042940;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 10px #005c53;
+  transition: 0.5s;
+  z-index: 10;
+  position: absolute;
+}
+
+.toggle {
+  position: absolute;
+  top: 10px;
+  right: -37px;
+  z-index: 1;
+  background-color: #042940;
+  height: 35px;
+  width: 40px;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 5px;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.lines {
+  width: 60%;
+  height: 2px;
+  display: block;
+  background-color: #9fc131;
+  padding-right: 10px;
+}
+
+.toggle-function {
+  transform: translate(-220px, 0);
+  transition: 0.5s;
+}
+
+.profil-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  background-image: url(./images/sidebar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profil-card .title {
+  margin-top: 5px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #d6d58e;
+}
+
+.profil-card .subtitle {
+  font-weight: 300;
+  font-size: small;
+  letter-spacing: 1px;
+}
+
+.links-list li a,
+.signout a,
+.social-icons {
+  color: lightblue;
+  margin-left: 25px;
+  display: block;
+  font-weight: 300;
+  padding: 5px 0;
+  font-size: medium;
+  transition: ease-in-out 0.2s;
+}
+
+.links-list i,
+.signout i {
+  color: lightblue;
+  margin-right: 10px;
+}
+
+.links-list li :hover,
+.signout a :hover {
+  color: #9fc131;
+  font-weight: 600;
+  transition: ease-in-out 0.2s;
+}
+
+.links-list li {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.links-list li:nth-child(5) {
+  padding-top: 10px;
+  border-top: 1px rgba(255, 255, 255, 0.292) solid;
+}
+
+.signout {
+  border-top: 1px rgba(255, 255, 255, 0.292) solid;
+  padding: 5px 0 0 0;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: large;
+  padding: 20px 0;
+}
+
+.social-icons a {
+  color: lightyellow;
+}
+
+.social-icons a:hover {
+  color: #9fc131;
+}
